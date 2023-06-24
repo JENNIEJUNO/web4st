@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web 1-04</title>
+        <style>
+            *{
+                margin:0px; padding:0px;
+                box-sizing:border-box;
+            }
+            body{display:flex;}
+            a{
+                z-index:1;
+                text-decoration:none;
+            }
+            #box{
+                width:1280px; height:720px;
+                margin:auto;
+                display:flex;
+                background:RGB(50,50,50);
+            }
+            .title_box{
+                width:278px; height:100%;
+                border-right:2px solid white;
+                display:flex;
+                flex-basis:280px;
+                flex-direction:column;
+            }
+            .up_box{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font:italic bold 30pt/50px "Times New Roman";
+                color:white;
+                flex-basis:50%;
+            }
+            .down_box{
+                display:flex;
+                justify-content:center;
+                align-items:flex-end;
+                padding-bottom:20px;
+                flex-grow:1;
+                font:normal bold 10pt/16pt "verdana";
+                color:white;
+            }
+            nav{
+                position:relative;
+                width:100%; height:118px;
+                border-bottom:2px solid white;
+                flex-basis:1000px;
+            }
+            content{
+                display:flex;
+                flex-direction:column;
+                flex-grow:1;
+            }
+            nav{
+                position:relative;
+                width:100%; height:120px;
+                flex-basis:120px;
+            }
+            nav>img{
+                position:absolute;
+                right:10px; bottom:10px;
+            }
+            section{
+                display:flex;
+                width:100%; height:600px;
+            }
+            article{
+                display:flex;
+                position:relative;
+                flex-direction:column;
+                width:250px; height:100%;
+                opacity:0.4;
+                overflow:hidden;
+            }
+            article>img{
+                position:absolute;
+                left:-250px;
+                transition-duration:1s;
+                z-index:1;
+            }
+            article>div{
+                padding-top:70px;
+                padding-right:40px; padding-left:40px;
+                color:white;
+                flex-grow:1;
+                z-index:1;
+            }
+            article h1{
+                font-size:35px;
+                line-height:70px;
+                width:60px;
+                border-bottom:2px solid white;
+            }
+            article h3{margin:15px 0px;}
+            article a img{
+                padding-bottom:70px;
+                padding-right:40px; padding-left:40px;
+                width:100%; height:100%;
+                transition-duration:1s;
+            }
+            article:hover{opacity:1;}
+            article:hover>img{
+                left:0px;
+            }
+            article:hover>a>img{
+                width:280px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+            <div class="title_box">
+                <div class="up_box"">FORTNITE</div>
+                <div class="down_box">
+                    @ 2023, Epic Games, Inc.<br>
+                    All Rights Reserved.
+                </div>
+            </div>
+            <content>
+                <nav>
+                    <img src="mail.png"width="30">
+                </nav>
+                <section>
+                    <article>
+                        <img src="back.png">
+                        <div>
+                            <h1>01</h1>
+                            <h3>BATTLE ROYAL</h3>
+                            The battle is building!
+                            Drop into the Battle
+                            Royale. Loot, build,
+                            explore, and fight in a
+                            game of 100 players
+                            competing to be the
+                            last one standing.
+                        </div>
+                        <a href="overwatch.html"><img src="img1.png"></a>
+                    </article>
+                    <article>
+                        <img src="back.png">
+                        <div>
+                            <h1>02</h1>
+                            <h3>ZERO BUILD</h3>
+                            All battle, no building!
+                            Zero Build is all the
+                            action, loot, and
+                            progression of classic
+                            Battle Royale, without
+                            the Building!
+                        </div>
+                        <a href="overwatch.html"><img src="img2.png"></a>
+                    </article>
+                    <article>
+                        <img src="back.png">
+                        <div>
+                            <h1>03</h1>
+                            <h3>ARENA MODES</h3>
+                            Test your skills
+                            against the best!
+                            During each match,
+                            you'll earn Hype by
+                            either achieving high
+                            placements or
+                            eliminating
+                            opponents.
+                        </div>
+                        <a href="overwatch.html"><img src="img3.png"></a>
+                    </article>
+                    <article>
+                        <img src="back.png">
+                        <div>
+                            <h1>04</h1>
+                            <h3>ARENA MODES</h3>
+                            Test your skills
+                            against the best!
+                            During each match,
+                            you'll earn Hype by
+                            either achieving high
+                            placements or
+                            eliminating
+                            opponents.
+                        </div>
+                        <a href="overwatch.html"><img src="img4.png"></a>
+                    </article>
+                </section>
+            </content>
+        </div>
+    </body>
+</html>
